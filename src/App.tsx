@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import { TopBar } from './header'
-import { NewsBar, NewsPage, NewsSkeleton, NewsSpinner, Topics } from './news'
 import { fetchDataAfterDelay } from './app.util'
+import { TopBar } from './header'
+import { NewsBar, NewsPage, NewsSkeleton, NewsSpinner } from './news'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)

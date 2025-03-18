@@ -1,5 +1,5 @@
-import * as Styled from './news.style'
 import { Skeleton } from '../skeleton'
+import * as Styled from './news.style'
 import { Topics } from './topics'
 
 export const NewsSkeleton = () => {
