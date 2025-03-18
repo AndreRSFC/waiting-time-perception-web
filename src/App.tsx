@@ -1,7 +1,11 @@
+import { TopBar } from './header'
+import { NewsPage } from './news'
+
 function App() {
   return (
     <>
-      <h1>Vite + React</h1>
+      <TopBar />
+      <NewsPage />
     </>
   )
 }
