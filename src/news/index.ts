@@ -1,1 +1,5 @@
 export { NewsPage } from './news.component'
+export { NewsSpinner } from './news-spinner.component'
+export { NewsBar } from './news-bar.component'
+export { NewsSkeleton } from './news-skeleton.component'
+export { Topics } from './topics'

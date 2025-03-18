@@ -5,28 +5,34 @@ export const NewsContainer = styled.div`
   margin: 30px auto;
   padding: 20px;
   font-family: Arial, sans-serif;
+  margin-bottom: 0;
+  padding-bottom: 0;
 `
 
 export const NewsTitle = styled.h1`
   font-size: 2.5rem;
+  text-align: justify;
   color: #333;
   margin-bottom: 20px;
 `
 
 export const NewsSubtitle = styled.h3`
   font-size: 1.5rem;
+  text-align: justify;
   color: #555;
   margin-bottom: 10px;
 `
 
 export const NewsDate = styled.p`
   font-size: 1rem;
+  text-align: justify;
   color: #888;
   margin-bottom: 10px;
 `
 
 export const NewsContent = styled.p`
   font-size: 1.2rem;
+  text-align: justify;
   line-height: 1.8;
   color: #555;
   margin-bottom: 30px;
@@ -41,11 +47,17 @@ export const NewsImage = styled.img`
 `
 
 export const TopicsContainer = styled.div`
-  margin-top: 30px;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 0;
+  padding-top: 0;
 `
 
 export const TopicTitle = styled.h4`
   font-size: 1.4rem;
+  text-align: justify;
   color: #333;
   margin-bottom: 15px;
 `
@@ -61,47 +73,15 @@ export const TopicItem = styled.li`
   margin-bottom: 10px;
 `
 
-export const CommentSection = styled.div`
-  margin-top: 50px;
-  padding-top: 30px;
-  border-top: 2px solid #ccc;
-`
-
-export const CommentTitle = styled.h3`
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 15px;
-`
-
-export const Comment = styled.div`
-  padding: 15px;
-  background: #f9f9f9;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-`
-
-export const CommentUser = styled.h4`
-  font-size: 1.2rem;
-  color: #007bff;
-  margin-bottom: 5px;
-`
-
-export const CommentText = styled.p`
-  font-size: 1rem;
-  color: #444;
-`
-
-export const AddCommentButton = styled.button`
-  margin-top: 20px;
-  padding: 10px 15px;
-  font-size: 1rem;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-
-  &:hover {
-    background-color: #0056b3;
-  }
+export const NewsOverlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 `
