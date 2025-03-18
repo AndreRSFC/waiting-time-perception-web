@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { LoadingTypesEnum } from './app.constant'
 import { fetchDataAfterDelay } from './app.util'
 import { TopBar } from './header'
 import {
@@ -9,7 +10,6 @@ import {
   NewsSpinner,
   NewsSpinnerSkeleton,
 } from './news'
-import { LoadingTypesEnum } from './app.constant'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
