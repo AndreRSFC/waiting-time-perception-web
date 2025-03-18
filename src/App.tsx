@@ -1,19 +1,27 @@
 import { useEffect, useState } from 'react'
 import { fetchDataAfterDelay } from './app.util'
 import { TopBar } from './header'
-import { NewsBar, NewsPage, NewsSkeleton, NewsSpinner } from './news'
+import {
+  NewsBar,
+  NewsBarSkeleton,
+  NewsPage,
+  NewsSkeleton,
+  NewsSpinner,
+  NewsSpinnerSkeleton,
+} from './news'
+import { LoadingTypesEnum } from './app.constant'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
-  const [loadingType, setLoadingType] = useState<
-    'spinner' | 'bar' | 'skeleton'
-  >('spinner')
+  const [loadingType, setLoadingType] = useState<LoadingTypesEnum>(
+    LoadingTypesEnum.EMPTY
+  )
 
-  // Simulando a troca do tipo de carregamento no mount
   useEffect(() => {
-    const types = ['spinner', 'bar', 'skeleton', '']
-    setLoadingType(types[Math.floor(Math.random() * types.length)])
-  }, []) // O array vazio faz isso acontecer apenas uma vez no mount
+    const types = Object.values(LoadingTypesEnum)
+    const randomType = types[Math.floor(Math.random() * types.length)]
+    setLoadingType(randomType)
+  }, [])
 
   useEffect(() => {
     fetchDataAfterDelay().then(() => {
@@ -24,9 +32,17 @@ function App() {
   return (
     <>
       <TopBar />
-      {isLoading && loadingType === 'spinner' && <NewsSpinner />}
-      {isLoading && loadingType === 'bar' && <NewsBar />}
-      {isLoading && loadingType === 'skeleton' && <NewsSkeleton />}
+      {isLoading && loadingType === LoadingTypesEnum.SPINNER && <NewsSpinner />}
+      {isLoading && loadingType === LoadingTypesEnum.BAR && <NewsBar />}
+      {isLoading && loadingType === LoadingTypesEnum.SKELETON && (
+        <NewsSkeleton />
+      )}
+      {isLoading && loadingType === LoadingTypesEnum.SKELETON_BAR && (
+        <NewsBarSkeleton />
+      )}
+      {isLoading && loadingType === LoadingTypesEnum.SKELETON_SPINNER && (
+        <NewsSpinnerSkeleton />
+      )}
       {!isLoading && <NewsPage />}
     </>
   )
