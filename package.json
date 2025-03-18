@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "lint:commit": "commitlint --from=HEAD~1"
+    "lint": "biome lint"
   },
   "dependencies": {
     "react": "^19.0.0",
