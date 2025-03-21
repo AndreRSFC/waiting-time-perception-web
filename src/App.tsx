@@ -1,7 +1,11 @@
 import { useEffect, useState } from 'react'
 import { LoadingTypesEnum } from './app.constant'
+import { Overlay } from './app.style'
 import { fetchDataAfterDelay } from './app.util'
+import { BottomBar } from './bottom-bar'
 import { TopBar } from './header'
+import { ResearchEndImage, ResearchImage } from './images'
+import { Modal } from './modal'
 import {
   NewsBar,
   NewsBarSkeleton,
@@ -10,10 +14,6 @@ import {
   NewsSpinner,
   NewsSpinnerSkeleton,
 } from './news'
-import { Overlay } from './app.style'
-import { Modal } from './modal'
-import { ResearchEndImage, ResearchImage } from './images'
-import { BottomBar } from './bottom-bar'
 
 function App() {
   const [isLoading, setIsLoading] = useState(false)
