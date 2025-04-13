@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const NewsContainer = styled.div`
   max-width: 900px;
-  margin: 30px auto;
+  margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
   margin-bottom: 0;
