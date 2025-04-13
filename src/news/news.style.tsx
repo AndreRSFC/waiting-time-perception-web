@@ -7,6 +7,14 @@ export const NewsContainer = styled.div`
   font-family: Arial, sans-serif;
   margin-bottom: 0;
   padding-bottom: 0;
+  
+  @media (max-width: 768px) {
+    padding: 15px;
+  }
+  
+  @media (max-width: 480px) {
+    padding: 10px;
+  }
 `
 
 export const NewsTitle = styled.h1`
@@ -14,6 +22,16 @@ export const NewsTitle = styled.h1`
   text-align: justify;
   color: #333;
   margin-bottom: 20px;
+  
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+  }
 `
 
 export const NewsSubtitle = styled.h3`
@@ -21,6 +39,16 @@ export const NewsSubtitle = styled.h3`
   text-align: justify;
   color: #555;
   margin-bottom: 10px;
+  
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
 `
 
 export const NewsDate = styled.p`
@@ -28,6 +56,11 @@ export const NewsDate = styled.p`
   text-align: justify;
   color: #888;
   margin-bottom: 10px;
+  
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
 `
 
 export const NewsContent = styled.p`
@@ -36,6 +69,18 @@ export const NewsContent = styled.p`
   line-height: 1.8;
   color: #555;
   margin-bottom: 30px;
+  
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
 `
 
 export const NewsImage = styled.img`
@@ -44,6 +89,16 @@ export const NewsImage = styled.img`
   border-radius: 8px;
   margin-bottom: 20px;
   object-fit: cover;
+  
+  @media (max-width: 768px) {
+    height: 300px;
+    margin-bottom: 15px;
+  }
+  
+  @media (max-width: 480px) {
+    height: 200px;
+    margin-bottom: 12px;
+  }
 `
 
 export const TopicsContainer = styled.div`
@@ -53,6 +108,16 @@ export const TopicsContainer = styled.div`
   font-family: Arial, sans-serif;
   margin-top: 0;
   padding-top: 0;
+  
+  @media (max-width: 768px) {
+    padding: 15px;
+    margin: 20px auto;
+  }
+  
+  @media (max-width: 480px) {
+    padding: 10px;
+    margin: 15px auto;
+  }
 `
 
 export const TopicTitle = styled.h4`
@@ -60,6 +125,16 @@ export const TopicTitle = styled.h4`
   text-align: justify;
   color: #333;
   margin-bottom: 15px;
+  
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
 `
 
 export const TopicList = styled.ul`
@@ -71,6 +146,16 @@ export const TopicItem = styled.li`
   font-size: 1.1rem;
   color: #007bff;
   margin-bottom: 10px;
+  
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+  }
 `
 
 export const NewsOverlay = styled.div`

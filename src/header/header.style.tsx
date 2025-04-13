@@ -1,4 +1,3 @@
-// header.style.ts
 import styled from 'styled-components'
 
 export const TopBarContainer = styled.header`
@@ -61,7 +60,6 @@ export const NavLinkItem = styled.div`
   }
 `
 
-// Novo componente para o ícone do menu hambúrguer
 export const HamburgerIcon = styled.div`
   display: none;
   cursor: pointer;
@@ -82,7 +80,6 @@ export const CloseIcon = styled.span`
   color: white;
 `
 
-// Componente para o menu móvel
 export const MobileNavLinks = styled.nav`
   display: none;
   

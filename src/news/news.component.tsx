@@ -1,7 +1,6 @@
 import * as Styled from './news.style'
 import { Topics } from './topics'
 
-// Componente de Página de Notícia
 export const NewsPage: React.FC = () => {
   return (
     <>
