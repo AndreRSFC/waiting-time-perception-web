@@ -1,1 +1,1 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('https://andrersfc.github.io/waiting-time-perception-web/sw.js', { scope: 'https://andrersfc.github.io/waiting-time-perception-web/' })})}
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/waiting-time-perception-web/sw.js', { scope: '/waiting-time-perception-web/' })})}
