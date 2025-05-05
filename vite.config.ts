@@ -4,6 +4,7 @@ import svgr from 'vite-plugin-svgr'
 import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
+  base: '/waiting-time-perception-web/',
   plugins: [
     react(),
     svgr(),

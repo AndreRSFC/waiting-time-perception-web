@@ -3,7 +3,6 @@ export enum LoadingTypesEnum {
   SPINNER = 'SPINNER',
   BAR = 'BAR',
   SKELETON = 'SKELETON',
-  GAME = 'GAME',
   SKELETON_SPINNER = 'SKELETON_SPINNER',
   SKELETON_BAR = 'SKELETON_BAR',
 }

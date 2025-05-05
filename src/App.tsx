@@ -28,11 +28,12 @@ function App() {
   useEffect(() => {
     const types = Object.values(LoadingTypesEnum)
     const shuffledQueue = types.sort(() => Math.random() - 0.5)
+    console.log(shuffledQueue)
     setLoadingQueue(shuffledQueue)
   }, [])
 
   const handleNextLoading = () => {
-    if (!loadingQueue || currentIndex >= loadingQueue.length - 1) return
+    if (!loadingQueue || currentIndex >= loadingQueue.length) return
 
     setIsBottomBarVisible(false)
     setIsLoading(true)
@@ -57,7 +58,8 @@ function App() {
   }
 
   const goToForm = () => {
-    const formUrl = 'https://linkdoformulario.com'
+    const formUrl =
+      'https://docs.google.com/forms/d/e/1FAIpQLSfjXNhjDPxjgHjCYNByFzxMpD1HDOmC_y-4nbgxCzsXSHC0Zw/viewform?usp=sharing'
     window.location.href = formUrl
   }
 
@@ -89,7 +91,7 @@ function App() {
         isBottomBarVisible={isBottomBarVisible}
         onClickToFinish={handleFinishStudy}
         onClickToNext={handleNextLoading}
-        isLastItem={currentIndex < loadingQueue.length - 1}
+        isLastItem={currentIndex < loadingQueue.length}
       />
       {isOverlayVisible && (
         <Overlay>
